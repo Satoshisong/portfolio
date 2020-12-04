@@ -127,13 +127,11 @@ p {
   margin: 0 4px;
   cursor: pointer;
   border-radius: var(--size-border-radius);
-}
-
-.navbar__menu__item.active {
-  border: 2px solid var(--color-white);
+  border: 2px solid transparent;
 }
 
 .navbar__menu__item:hover {
+  border: 2px solid var(--color-white);
   background-color: var(--color-dark-pink);
 }
 
@@ -316,13 +314,13 @@ p {
   padding: 8px 48px;
 }
 
-.category__btn.active .category__count.active,
+.category__btn.selected .category__count.active,
 .category__btn:hover .category__count {
   opacity: 1;
   top: 0;
 }
 
-.category__btn.active,
+.category__btn.selected,
 .category__btn:hover {
   background-color: var(--color-pink);
   color: var(--color-white);
